@@ -248,6 +248,9 @@ curl http://$ALB/health
 
 ---
 
+
+---
+
 ## What comes next
 
 The natural extensions to this setup are HTTPS termination at the ALB (ACM certificate + port 443 on the ALB security group + HTTPS listener), a Route 53 record pointing a real domain at the ALB DNS name, cluster autoscaling to handle traffic spikes, and tightening the node egress rule to only allow traffic to specific AWS service endpoints rather than the open internet.
