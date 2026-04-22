@@ -19,7 +19,7 @@ spec:
       containers:
         - name: dashboard
           # Replace with the ecr_repository_url Terraform output
-          image: 470657683332.dkr.ecr.eu-central-1.amazonaws.com/gds-app:latest
+          image: <ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/gds-app:latest
           ports:
             - containerPort: 5000   # Flask app port
           resources:
